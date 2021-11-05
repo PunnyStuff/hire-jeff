@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Jeff</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/dark.css">
+</head>
+<body>
+    <progress max="100" value="0"></progress>
+    <div id="fade" class="hidden"></div>
+    <div class="hero_sect" id="hero_link">
+        <div class="hero_title">
+            <p id="title_1">Hire</p>
+            <p id="title_2">Jeff</p>
+        </div>
+        <div class="hero_img">
+                <img src="images/Gnigs_head.png" alt="It's Me." id="hero_jeff">
+                </svg>
+            <div id="hero_border"></div>
+        </div>
+    </div>
+    <sl-divider style="--width: 0.2vh; --color: white; --spacing: 5vh;"></sl-divider>
+    <div class="navi_sect">
+        <div id="navi_divs">
+            <div class="top_border" id="nav_top_border"></div>
+            <div class="nav_div" id="nav_about">
+                <a href="#about_link" class="nav_a">About me</a>  
+            </div>
+            <div class="nav_div" id="nav_info">
+                <a href="#info_link" class="nav_a">What I do</a>  
+            </div>
+            <div class="nav_div" id="nav_cont">
+                <a href="#contact_link" id="a_cont" class="nav_a">Contact</a>  
+            </div>
+            <div class="bottom_border" id="nav_bottom_border"></div>
+        </div>
+    </div>
+    <sl-divider style="--width: 0.2vh; --color: white; --spacing: 5vh;"></sl-divider>
+    <div class="about_sect">
+        <div class="top_border" id="about_top_border"></div>
+        <div id="about_flex">
+            <div id="about_texts">
+                <p class="about_me_header"  id="about_link">About Me</p>
+                <div id="about_para">
+                    <p class="about_me_para">My name's Jeffrey Cottrell, I'm 21 years old and I am a digital designer.<br><br> I have a odd range of hobbies ranging from table top and video games, to gardening or cooking. But regardless of the hobby, I enjoy it best when I'm doing with a friend or two.<br><br> I choose to be a Digital Designer when I was 18 and attempting to become an engineer, at which point I realized engineering sucked, but I enjoyed the process of creating a solution to something with a team,so I took a step back and realised that if I combined the solving of issues with my skill with computers it would lead me to digital design.</p>
+                </div>
+            </div> 
+            <div id="about_image">
+                <img class="about_me_img" src="./images/Gnigs.png" alt="">
+            </div>
+        </div>
+        <div class="bottom_border" id="about_bottom_border"></div>
+    </div>
+    <sl-divider style="--width: 0.2vh; --color: white; --spacing: 5vh;"></sl-divider>
+    <div class="info_sect">
+        <div class="top_border" id="info_top_border"></div>
+            <div>
+                <div>
+                    <p class="info_head" id="info_link">What I Do</p>
+                    <p id="info_body">Being a "Digital Designer is a rather broad term, so what I specfically have skills in are devided into 3 main catagories; Design reseach, User experience, and website Coding (HTML, CSS, JVS)<br><br>Some examples below include, eBoy, a fictional website aimed to sell AI companions, Second Slice, a cafe website and a third example, which I have none for.</p>
+                </div>
+                <div id="gallery">
+                    <sl-button type="text" class="img_box" id="ex_1">
+                        <img src="/images/eboy.PNG" alt="eBoy" class="example_1_shown" id="shown">
+                        <img src="/images/eboyfull.png" alt="" id="example_1_hidden" class="hidden">
+                    </sl-button> 
+                    <sl-button type="text" class="img_box" id="ex_2">
+                        <img src="images/second-slice-logo-bw.png" alt="" class="example_2_shown" id="shown">
+                        <img src="images/ssfull.png" alt="" id="example_2_hidden" class="hidden">
+                    </sl-button>
+                    <sl-button type="text" class="img_box" id="ex_3">
+                        <img src="" alt="" class="example_3_shown" id="shown">
+                        <img src="images/IMG_4365.jpg" alt="" id="example_3_hidden" class="hidden">
+                    </sl-button>
+                </div>
+                <div class="bottom_border" id="info_bottom_border"></div>
+            </div>
+    </div>
+    <sl-divider style="--width: 0.2vh; --color: white; --spacing: 5vh;"></sl-divider>
+    <div class="contact_sect">
+        <div>
+            <div class="top_border" id="contact_top_border"></div>
+            <div>
+                <div>
+                    <a href="" class="mail" id="contact_link">Mail@mail.com</a>
+                </div>
+                <div>
+                    <a href="" class="phone" id="contact_link">04 0000 0000</a>
+                    <div class="center_box"></div>
+                </div>
+                <div>
+                    <a href="https://twitter.com/home" class="twitter" id="contact_link">Twitter</a>
+                    <div class="right_box"></div>
+                </div>
+            </div>
+            <div class="bottom_border" id="contact_bottom_border"></div>
+        </div>
+
+    </div>
+    <div class="other_sect">
+        <a href="#hero_link" id="top_button"><sl-icon name="arrow-up"></sl-icon></a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="main.js" href="#hero_link"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js"></script>
+ 
+</body>
+</html>

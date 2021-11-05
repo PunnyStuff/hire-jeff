@@ -1,0 +1,529 @@
+/*-------------------------------gen stylings------------------------------- */
+body { 
+    margin: 0; 
+    box-sizing: border-box; 
+    background-color: #292929; 
+    width: 100vw;}
+a { 
+    text-decoration: none; 
+    color:white; 
+    font-family: 'Saira', sans-serif; 
+}
+.top_border, .bottom_border{
+    position: absolute;
+    height: 20vh;
+    width: 10vw;
+}
+.top_border{
+    border-top: solid white 1px;
+    border-left: solid white 1px;
+}
+.bottom_border{
+    border-bottom: solid white 1px;
+    border-right: solid white 1px;
+}
+p{
+    color: white;
+    font-family: 'Saira', sans-serif;
+}
+.hidden{
+    display: none;
+}
+#fade{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    height: 475vh;
+    z-index: 3;
+}
+sl-button{
+    border: none;
+}
+progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 15px;
+    border: black;
+    background: transparent;
+    z-index: 30;
+  }
+  progress::-webkit-progress-bar {
+    background: transparent;
+  }
+  progress::-webkit-progress-value {
+    background: linear-gradient(to left, white, white, white, white, white, white);
+    background-attachment: fixed;
+  }
+  progress::-moz-progress-bar {
+    background: linear-gradient(to left, white, white, white, white, white, white);
+    background-attachment: fixed;
+  }
+/*-------------------------------hero stylings------------------------------- */
+.hero_sect{
+    width: 100%;
+    height: 100vh;
+}
+.hero_title{
+    display: flex;
+}
+#title_1, #title_2{
+    font-size: 20vh;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+#title_1 {
+    top: 5vh;
+    left: 10vw;
+    transform: rotate(-10deg);
+}
+#title_2 {
+    top: 5vh;
+    right: 10vw;
+    transform: rotate(10deg);
+}
+
+.hero_img{
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+#hero_border{
+    border: solid white 1px;
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+    top: 50vh;
+    left: 25vw;
+    z-index: 1;
+}
+#hero_jeff{
+    position: absolute;
+    height: 70vh;
+    width: auto;
+    top: 30vh;
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    z-index: 2;
+}
+
+/* -------------------------------navi stylings------------------------------- */
+.navi_sect{
+    height: 40vh;
+}
+#navi_divs{
+    display: flex;
+}
+
+#nav_top_border{
+    left: 10vw;
+    top: 110vh;
+}
+#nav_bottom_border{
+    right: 10vw;
+    top: 130vh;
+}
+.nav_div{
+    background-color: #28282B;
+    height: 10vh;
+    width: 15vw;
+    border: solid white 1px;
+    position: absolute;
+    top: 125vh;
+}
+#nav_about{
+    left: 27.5vw;
+}
+#nav_info{
+    left: 42.5vw;
+}
+#nav_cont{
+    left: 57.5vw;
+}
+.nav_a{
+    font-size: 2vh;
+    position: absolute;
+    top: 3.5vh;
+    left: 5vw;
+}
+#a_cont{
+    left: 5.5vw;
+}
+
+/* -------------------------------about stylings------------------------------- */
+.about_sect{
+    width: 100%;
+    height: 70vh;
+}
+#about_flex{
+    display: flex;
+}
+#about_bottom_border, #about_top_border{
+    position: absolute;
+}
+#about_top_border{
+    top: 160vh;
+    left: 10vw;
+}#about_bottom_border{
+    top: 210vh;
+    right: 10vw;
+}
+.about_me_header{
+    font-size: 6vh;
+    position: absolute;
+    top: 160vh;
+    left: 15vw;
+}
+.about_me_para{
+    font-size: 2vh;
+    position: absolute;
+    top: 180vh;
+    left: 15vw;
+    word-wrap: break-word;
+    width: 45vw;
+}
+.about_me_img{
+    position: absolute;
+    top: 160vh;
+    right: 12vw;
+    height: 70vh;
+}
+
+/* -------------------------------info stylings------------------------------- */
+.info_sect{
+    width: 100%;
+    height: 70vh;
+}
+#info_top_border{
+    top: 240vh;
+    left: 10vw;
+}
+#info_bottom_border{
+    top: 290vh;
+    right: 10vw;
+}
+.info_head{
+    font-size: 6vh;
+    position: absolute;
+    top: 240vh;
+    left: 20vw;
+}
+#info_body{
+    font-size: 2vh;
+    position: absolute;
+    top: 255vh;
+    left: 20vw;
+    width: 60vw;
+}
+.img_box{
+    border: solid white 1px;
+    width: 20vw;
+    background-color: #28282B;
+    height: 20vh;
+    position: absolute;
+    top: 275vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ex_1{
+    left: 20vw;
+}
+.example_1_shown{
+    height: 20vh;
+}
+#example_1_hidden{
+    height: 200vh;
+    position: absolute;
+    left: 150%;
+    transform: translate(-50%, 0);
+    z-index: 4;
+    top: -40vh;
+}
+#ex_2{
+    left: 40vw;
+}
+.example_2_shown{
+    height: 25vh;
+}
+#example_2_hidden{
+    height: 200vh;
+    position: absolute;
+    top: -50vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 4;
+}
+#ex_3{
+    left: 60vw;
+}
+#example_3_hidden{
+    height: 50vh;
+    position: absolute;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+/* -------------------------------contact stylings------------------------------- */
+.contact_sect{
+    width: 100%;
+    height: 60vh;
+}
+#contact_top_border{
+    top: 320vh;
+    left: 10vw;
+}
+#contact_bottom_border{
+    top: 360vh;
+    right: 10vw;
+    margin-bottom: 10vh;
+}
+.center_box{
+    border-top: solid white 1px;
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 335vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.right_box{
+    border-bottom: solid white 1px;
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    top: 335vh;
+    right: 20vw;
+    transform: translate(-50%, 0);
+}
+.mail, .phone, .twitter{
+    position: absolute;
+    top: 350vh;
+    font-size: 2vh;
+    transform: translate(-50%, 0);
+}
+.mail{
+    left: 33vw;
+}
+.phone{
+    left: 50vw;
+}
+.twitter{
+    right: 33vw;
+}
+
+/* -------------------------------other stylings------------------------------- */
+#top_button{
+    font-size: 5vh;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50vw;
+}
+
+/* -------------------------------CSS animation stylings------------------------------- */
+#top_button{
+    transition-duration: .5s;
+}
+#top_button:hover{
+    font-size: 7vh;
+}
+
+/* -------------------------------SVG animation stylings------------------------------- */
+/* #hero_jeff{
+    offset-path: path('M 500 1000 L 500 200');
+     offset-distance: 0%;
+     offset-rotate: 0deg;
+
+  animation: jeffmove 1s linear alternate;
+  animation-fill-mode: forwards; 
+}
+@keyframes jeffmove {
+  from {
+    offset-distance: 0%;
+  }
+  to {
+    offset-distance: 100%;
+  }
+}
+
+so i was working with some SVG pathing, but this shit is so annoying to get it to be responsive id have to jump through so many hoops, so i have opted to not use it, i am not sorry but i have left my attempts here to demonstrate i do understand it
+*/
+
+/* -------------------------------responsive stylings------------------------------- */
+@media only screen and (max-height: 768px) {
+
+    #fade{
+
+
+        height: 480vh;
+        z-index: 1;
+    }
+    /*-------------------------------hero stylings------------------------------- */
+    #title_1, #title_2{
+        font-size: 20vh;
+        transform: rotate(0deg);
+    }
+    #title_1{
+        left: 50%; 
+        transform: translate(-50%, 0);
+        top: 3vh;
+    }
+    #title_2{
+        right: 50vw; 
+        transform: translate(50%, 0);
+        top: 20vh;
+    }
+    #hero_border{
+        width: 80vw;
+        left: 50%; 
+        transform: translate(-50%, 0);
+    }
+    #hero_jeff{
+        height: 40vh;
+        top: 60vh;
+    }
+
+    /* -------------------------------navi stylings------------------------------- */
+    .nav_div{
+        height: 15vh;
+        width: 20vw;
+        top: 123vh;
+    }
+    #nav_about{
+        left: 20vw;
+    }
+    #nav_info{
+        left: 40vw;
+    }
+    #nav_cont{
+        left: 60vw;
+    }
+    .nav_a, #a_cont{
+        top: 50%;
+        text-align: center;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+
+    /* -------------------------------about stylings------------------------------- */
+    .about_me_para{
+        width: 70vw;
+        text-align: center;
+    }
+    #about_bottom_border{
+        top: 220vh;
+    }
+    .about_me_img{
+        display: none;
+    }
+    .about_sect{
+        height: 80vh;
+    }
+
+    /* -------------------------------info stylings------------------------------- */
+    .info_sect{
+        width: 100%;
+        height: 120vh;
+    }
+    #info_top_border{
+        top: 250vh;
+    }
+    #info_bottom_border{
+        top: 350vh;
+    }
+    .info_head{
+        top: 250vh;
+    }
+    #info_body{
+        width: 70vw;
+        top: 265vh;
+        left: 15vw;
+        text-align: center;
+    }
+    .img_box{
+        top: 0vh;
+        display: block;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 60vw;
+    }
+    #ex_1, #ex_2, #ex_3{
+        z-index: 1;
+    }
+    #ex_1{
+        top: 310vh;
+        left: 50vw;
+    }
+    #ex_2{
+        left: 50vw;
+        top: 330vh;
+    }
+    #ex_3{
+        left: 50vw;
+        top: 350vh;
+    }
+    .example_1_shown, .example_2_shown, .exmaple_3_shown{
+        height: 20vh;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 2;
+    }
+    #example_1_hidden{
+        width: 100vw;
+        height: auto;
+        z-index: 5;
+        top: -50vh;
+        left: 50%;
+    }
+    #example_2_hidden{
+        width: 100vw;
+        height: auto;
+        z-index: 10;
+        top: -70vh;
+    }
+
+    /* -------------------------------contact stylings------------------------------- */
+    .contact_sect{
+        height: 90vh;
+    }
+    #contact_top_border{
+        top: 380vh;
+    }
+    #contact_bottom_border{
+        top: 450vh;
+    }
+    .center_box{
+        top: 430vh;
+    }
+    .right_box{
+        top: 370vh;
+        right: 50vw;
+        transform: translate(50%, 0);
+    }
+    .mail{
+        left: 50vw;
+        top: 390vh;
+    }
+    .phone{
+        left: 50vw;
+        top: 415vh;
+    }
+    .twitter{
+        right: 50vw;
+        transform: translate(50%, 0);
+        top: 440vh;
+    }
+}
